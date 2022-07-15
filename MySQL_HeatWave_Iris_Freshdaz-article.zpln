@@ -1,0 +1,1746 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%sh\n\nmysqlsh --version",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:25+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655131627038_900383939",
+      "id": "paragraph_1655131627038_900383939",
+      "dateCreated": "2022-06-13T14:47:07+0000",
+      "dateStarted": "2022-07-11T15:51:25+0000",
+      "dateFinished": "2022-07-11T15:51:26+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:491917"
+    },
+    {
+      "text": "%sh\n\n# Download the dataset into MySQL HeatWave\n# Update host, user and password (from you're MySQL HeatWave)\n\nmysqlsh <user>:<password>@<host> --sql -f /home/ubuntu/MySQL_HeatWave-iris_ML.sql",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-15T08:25:47+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1656345415405_1161838986",
+      "id": "paragraph_1656345415405_1161838986",
+      "dateCreated": "2022-06-27T15:56:55+0000",
+      "dateStarted": "2022-07-15T08:24:08+0000",
+      "dateFinished": "2022-07-15T08:24:08+0000",
+      "status": "ERROR",
+      "$$hashKey": "object:491918"
+    },
+    {
+      "text": "--\n-- Checks\n--\n\n# Check HeatWave ML status\n\nSHOW GLOBAL STATUS LIKE 'rapid_ml_status';",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:26+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Variable_name": "string",
+                      "Value": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Variable_name",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Value",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655129161829_1383971848",
+      "id": "paragraph_1655129161829_1383971848",
+      "dateCreated": "2022-06-13T14:06:01+0000",
+      "dateStarted": "2022-07-11T15:51:26+0000",
+      "dateFinished": "2022-07-11T15:51:26+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491919"
+    },
+    {
+      "text": "--\n-- Data information\n--\n\n# Table structure \n\nDESCRIBE iris_ML.iris;  -- Reference table (production table)\nDESCRIBE iris_ML.iris_train; -- Table that contains the training dataset\nDESCRIBE iris_ML.iris_test; -- Test dataset table\nDESCRIBE iris_ML.iris_validate; -- Validation dataset table\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:27+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Field": "string",
+                      "Type": "string",
+                      "Null": "string",
+                      "Key": "string",
+                      "Default": "string",
+                      "Extra": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Field",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Type",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Field": "string",
+                      "Type": "string",
+                      "Null": "string",
+                      "Key": "string",
+                      "Default": "string",
+                      "Extra": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Field",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Type",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "2": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Field": "string",
+                      "Type": "string",
+                      "Null": "string",
+                      "Key": "string",
+                      "Default": "string",
+                      "Extra": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Field",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Type",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "3": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Field": "string",
+                      "Type": "string",
+                      "Null": "string",
+                      "Key": "string",
+                      "Default": "string",
+                      "Extra": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655220843166_37723748",
+      "id": "paragraph_1655220843166_37723748",
+      "dateCreated": "2022-06-14T15:34:03+0000",
+      "dateStarted": "2022-07-11T15:51:27+0000",
+      "dateFinished": "2022-07-11T15:51:27+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491920"
+    },
+    {
+      "text": "# Number of rows\n\nSELECT count(*) FROM iris_ML.iris;\nSELECT count(*) FROM iris_ML.iris_train;\nSELECT count(*) FROM iris_ML.iris_test;\nSELECT count(*) FROM iris_ML.iris_validate;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:27+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "count(*)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "count(*)",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "count(*)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "2": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "count(*)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "3": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "count(*)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655129712910_2122273859",
+      "id": "paragraph_1655129712910_2122273859",
+      "dateCreated": "2022-06-13T14:15:12+0000",
+      "dateStarted": "2022-07-11T15:51:27+0000",
+      "dateFinished": "2022-07-11T15:51:27+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491921"
+    },
+    {
+      "text": "# Data sample\n\nSELECT * FROM iris_ML.iris LIMIT 10;\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:27+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "sepal_length": "string",
+                      "sepal_width": "string",
+                      "petal_length": "string",
+                      "petal_width": "string",
+                      "class": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "sepal_length",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "sepal_width",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655131589478_852772468",
+      "id": "paragraph_1655131589478_852772468",
+      "dateCreated": "2022-06-13T14:46:29+0000",
+      "dateStarted": "2022-07-11T15:51:27+0000",
+      "dateFinished": "2022-07-11T15:51:27+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491922"
+    },
+    {
+      "text": "# Class distribution\n\nSELECT class, count(*) FROM iris_ML.iris GROUP BY class;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:27+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "class": "string",
+                      "count(*)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "class",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "count(*)",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655220398614_557907068",
+      "id": "paragraph_1655220398614_557907068",
+      "dateCreated": "2022-06-14T15:26:38+0000",
+      "dateStarted": "2022-07-11T15:51:27+0000",
+      "dateFinished": "2022-07-11T15:51:27+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491923"
+    },
+    {
+      "text": "# Summary Statistics\n\nSELECT MIN(sepal_length), MAX(sepal_length), ROUND(AVG(sepal_length), 2), ROUND(STD(sepal_length), 2) FROM iris_ML.iris;\nSELECT MIN(sepal_width), MAX(sepal_width), ROUND(AVG(sepal_width), 2), ROUND(STD(sepal_width), 2) FROM iris_ML.iris;\nSELECT MIN(petal_length), MAX(petal_length), ROUND(AVG(petal_length), 2), ROUND(STD(petal_length), 2) FROM iris_ML.iris;\nSELECT MIN(petal_width), MAX(petal_width), ROUND(AVG(petal_width), 2), ROUND(STD(petal_width), 2) FROM iris_ML.iris;\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:27+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "MIN(sepal_length)": "string",
+                      "MAX(sepal_length)": "string",
+                      "ROUND(AVG(sepal_length), 2)": "string",
+                      "ROUND(STD(sepal_length), 2)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "MIN(sepal_length)",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "MAX(sepal_length)",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "MIN(sepal_width)": "string",
+                      "MAX(sepal_width)": "string",
+                      "ROUND(AVG(sepal_width), 2)": "string",
+                      "ROUND(STD(sepal_width), 2)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "2": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "MIN(petal_length)": "string",
+                      "MAX(petal_length)": "string",
+                      "ROUND(AVG(petal_length), 2)": "string",
+                      "ROUND(STD(petal_length), 2)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "3": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "MIN(petal_width)": "string",
+                      "MAX(petal_width)": "string",
+                      "ROUND(AVG(petal_width), 2)": "string",
+                      "ROUND(STD(petal_width), 2)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655221574303_1401000689",
+      "id": "paragraph_1655221574303_1401000689",
+      "dateCreated": "2022-06-14T15:46:14+0000",
+      "dateStarted": "2022-07-11T15:51:27+0000",
+      "dateFinished": "2022-07-11T15:51:27+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491924"
+    },
+    {
+      "text": "%python.ipython\n\n##\n## Data visualization \n##\n## Edit python interpreter on Zeppelin - zeppelin.python\t: python3  instead of python\n## Update host, database, user and password (from your MySQL HeatWave)\n\n\nimport mysql.connector as connection\nimport pandas as pd\nimport seaborn as sns\nsns.set_palette('husl')\n%matplotlib inline\nimport matplotlib.pyplot as plt\n\n\ntry:\n    mydb = connection.connect(host=\"<host>\", database='iris_ML', user=\"<user>\", passwd=\"<password>\", port=3306)\n    query = \"SELECT * FROM iris;\"\n    data = pd.read_sql(query,mydb)\n    mydb.close() #close the connection\nexcept Exception as e:\n    my_conn.close()\n    print(str(e))\n\ndata.head()\n\ndata.info()\n\ndata.describe()\n\ndata['class'].value_counts()\n\ng = sns.pairplot(data, hue='class', markers='*')\n\nplt.show()",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:27+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655221818376_619362799",
+      "id": "paragraph_1655221818376_619362799",
+      "dateCreated": "2022-06-14T15:50:18+0000",
+      "dateStarted": "2022-07-11T15:51:27+0000",
+      "dateFinished": "2022-07-11T15:51:30+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491925"
+    },
+    {
+      "text": "--\n-- Training a Model\n--\n\n# Train the model using ML_TRAIN\n\nCALL sys.ML_TRAIN('iris_ML.iris_train', 'class', JSON_OBJECT('task', 'classification'), @iris_model);\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:30+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655232153594_260733424",
+      "id": "paragraph_1655232153594_260733424",
+      "dateCreated": "2022-06-14T18:42:33+0000",
+      "dateStarted": "2022-07-11T15:51:30+0000",
+      "dateFinished": "2022-07-11T15:51:38+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491926"
+    },
+    {
+      "text": "# Show the current model\n\n-- SELECT model_handle FROM ML_SCHEMA_admin.MODEL_CATALOG ORDER BY model_id DESC LIMIT 1 INTO @iris_model;\n-- uncomment the query above if your session has been closed\n\nSELECT @iris_model;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:38+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "@iris_model": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "@iris_model": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655242787560_1821457025",
+      "id": "paragraph_1655242787560_1821457025",
+      "dateCreated": "2022-06-14T21:39:47+0000",
+      "dateStarted": "2022-07-11T15:51:38+0000",
+      "dateFinished": "2022-07-11T15:51:38+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491927"
+    },
+    {
+      "text": "# Model information\n\nSELECT model_id, model_handle, model_owner, target_column_name, train_table_name, model_type, task, model_object_size  FROM ML_SCHEMA_admin.MODEL_CATALOG;\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:38+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "model_id": "string",
+                      "model_handle": "string",
+                      "model_owner": "string",
+                      "target_column_name": "string",
+                      "train_table_name": "string",
+                      "model_type": "string",
+                      "task": "string",
+                      "model_object_size": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "model_id",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "model_handle",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655242814608_134150830",
+      "id": "paragraph_1655242814608_134150830",
+      "dateCreated": "2022-06-14T21:40:14+0000",
+      "dateStarted": "2022-07-11T15:51:38+0000",
+      "dateFinished": "2022-07-11T15:51:38+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491928"
+    },
+    {
+      "text": "# Load the model into HeatWave ML \n\nCALL sys.ML_MODEL_LOAD(@iris_model, NULL);\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:38+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655297230089_157769115",
+      "id": "paragraph_1655297230089_157769115",
+      "dateCreated": "2022-06-15T12:47:10+0000",
+      "dateStarted": "2022-07-11T15:51:38+0000",
+      "dateFinished": "2022-07-11T15:51:39+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491929"
+    },
+    {
+      "text": "--\n-- Row Prediction\n--\n\n# Predict 1 Row\n\nSET @row_input = JSON_OBJECT( \n\"sepal_length\", 7.3, \n\"sepal_width\", 2.9, \n\"petal_length\", 6.3, \n\"petal_width\", 1.8);  \n\n\nSELECT sys.ML_PREDICT_ROW(@row_input, @iris_model);\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:39+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "ML_PREDICT_ROW(@row_input, @iris_model)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "ML_PREDICT_ROW(@row_input, @iris_model)",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655297331039_1637798016",
+      "id": "paragraph_1655297331039_1637798016",
+      "dateCreated": "2022-06-15T12:48:51+0000",
+      "dateStarted": "2022-07-11T15:51:39+0000",
+      "dateFinished": "2022-07-11T15:51:39+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491930"
+    },
+    {
+      "text": "--\n-- Row Explanation\n--\n\n# Prediction explanation for 1 Row\n\nSET @row_input = JSON_OBJECT( \n\"sepal_length\", 7.3, \n\"sepal_width\", 2.9, \n\"petal_length\", 6.3, \n\"petal_width\", 1.8);    \n\n\nSELECT sys.ML_EXPLAIN_ROW(@row_input, @iris_model);\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:39+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "ML_EXPLAIN_ROW(@row_input, @iris_model)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655297387159_1637624185",
+      "id": "paragraph_1655297387159_1637624185",
+      "dateCreated": "2022-06-15T12:49:47+0000",
+      "dateStarted": "2022-07-11T15:51:39+0000",
+      "dateFinished": "2022-07-11T15:51:42+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491931"
+    },
+    {
+      "text": "--\n-- Table Prediction\n--\n\n\n# Generate predictions for a table \n\n-- CALL sys.ML_MODEL_LOAD(@iris_model, NULL); -- Uncomment if the model is not yet loaded\n\nDROP TABLE IF EXISTS iris_ML.iris_predictions; -- Useful if a table prediction was already generated\n\n\nCALL sys.ML_PREDICT_TABLE('iris_ML.iris_test', @iris_model, 'iris_ML.iris_predictions');\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:42+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655297665553_2044240371",
+      "id": "paragraph_1655297665553_2044240371",
+      "dateCreated": "2022-06-15T12:54:25+0000",
+      "dateStarted": "2022-07-11T15:51:42+0000",
+      "dateFinished": "2022-07-11T15:51:44+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491932"
+    },
+    {
+      "text": "-- A new table called iris_predictions was created\n-- First 5 rows of the prediction\n\nSELECT * FROM iris_ML.iris_predictions LIMIT 5;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:44+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "sepal_length": "string",
+                      "sepal_width": "string",
+                      "petal_length": "string",
+                      "petal_width": "string",
+                      "Prediction": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "sepal_length",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "sepal_width",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655298019106_1910527350",
+      "id": "paragraph_1655298019106_1910527350",
+      "dateCreated": "2022-06-15T13:00:19+0000",
+      "dateStarted": "2022-07-11T15:51:44+0000",
+      "dateFinished": "2022-07-11T15:51:44+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491933"
+    },
+    {
+      "text": "# Prediction explanation for a table \n\n-- CALL sys.ML_MODEL_LOAD(@iris_model, NULL); -- Uncomment if the model is not yet loaded\n\nDROP TABLE IF EXISTS iris_ML.iris_explanations;  -- Useful if a table explanation was already done\n\n\nCALL sys.ML_EXPLAIN_TABLE('iris_ML.iris_test', @iris_model, 'iris_ML.iris_explanations');\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:44+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655298132621_1386460473",
+      "id": "paragraph_1655298132621_1386460473",
+      "dateCreated": "2022-06-15T13:02:12+0000",
+      "dateStarted": "2022-07-11T15:51:44+0000",
+      "dateFinished": "2022-07-11T15:51:51+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491934"
+    },
+    {
+      "text": "-- A new table iris_explanations was created\n-- First 5 row predicted explained\n\nSELECT * FROM iris_ML.iris_explanations LIMIT 5;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:51+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "sepal_length": "string",
+                      "sepal_width": "string",
+                      "petal_length": "string",
+                      "petal_width": "string",
+                      "Prediction": "string",
+                      "petal_length_attribution": "string",
+                      "petal_width_attribution": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "sepal_length",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "sepal_width",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655298446212_1736191056",
+      "id": "paragraph_1655298446212_1736191056",
+      "dateCreated": "2022-06-15T13:07:26+0000",
+      "dateStarted": "2022-07-11T15:51:51+0000",
+      "dateFinished": "2022-07-11T15:51:51+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491935"
+    },
+    {
+      "text": "\n--\n-- Scores\n--\n\n-- Score the model to assess the model's reliability\n\n-- CALL sys.ML_MODEL_LOAD(@iris_model, NULL); -- Uncomment if the model is not loaded yet\n\n\n-- This example uses the accuracy: Computes the fraction of labels a model predicts correctly\n\nCALL sys.ML_SCORE('iris_ML.iris_validate', 'class', @iris_model, 'accuracy', @accuracy_score);\n\nSELECT @accuracy_score;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:53:03+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "@accuracy_score": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1657554470084_56336044",
+      "id": "paragraph_1657554470084_56336044",
+      "dateCreated": "2022-07-11T15:47:50+0000",
+      "dateStarted": "2022-07-11T15:51:53+0000",
+      "dateFinished": "2022-07-11T15:51:54+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491936"
+    },
+    {
+      "user": "anonymous",
+      "dateUpdated": "2022-07-11T15:51:54+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1655298515204_2030543248",
+      "id": "paragraph_1655298515204_2030543248",
+      "dateCreated": "2022-06-15T13:08:35+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:491937"
+    }
+  ],
+  "name": "MySQL_HeatWave_Iris",
+  "id": "2H83T6CMB",
+  "defaultInterpreterGroup": "MySQL_HeatWave",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {
+    "isRunning": false
+  },
+  "path": "/MySQL_HeatWave_Iris"
+}
